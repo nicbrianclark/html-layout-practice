@@ -1,0 +1,117 @@
+/*** variables ***/
+:root {
+    --clr-green: #00B285;
+    --clr-yellow: #FFC927;
+    --clr-black: #262626;
+    --clr-darkgrey: #666666;
+    --clr-grey: #DDDDDD;
+    --clr-lightgrey: #EEEEEE;
+    --clr-white: #ffffff;
+}
+
+/*** fonts ***/
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url('../fonts/HelveticaNeue.ttc');
+}
+
+/*** globals ***/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 100;
+}
+
+/*** typography ***/
+h1 {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 100;
+}
+
+header {
+    background-color: var(--clr-darkgrey);
+    padding: 1rem 0;
+}
+header .main-navigation ul {
+    list-style: none;
+    gap: 2rem;
+}
+header .main-navigation ul li:last-child {
+    padding-left: 2rem;
+}
+header .main-navigation ul a {
+    color: var(--clr-white);
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.align-center {
+    align-items: center;
+}
+.text-center {
+    text-align: center;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.btn-group {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.btn {
+    border-radius: 25px;
+    padding: .5rem 2rem;
+    text-decoration: none;
+    color: var(--clr-black);
+}
+.btn-primary {
+    background-color: var(--clr-green);
+    color: var(--clr-white);
+}
+.btn-secondary {
+    background-color: var(--clr-yellow);
+}
+.btn-tiny {}
+
+
+/*** index.html ***/
+.hero {
+    background: 
+    url('../images/browser.png') no-repeat 70% 140%,
+    url('../images/browser.png') no-repeat 60% 160%;
+    padding-bottom: 20rem;
+}
+.hero-intro {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.hero-intro h1{
+    margin-bottom: 1rem;
+}
+.hero-intro h2{
+    margin-top: 0;
+}
